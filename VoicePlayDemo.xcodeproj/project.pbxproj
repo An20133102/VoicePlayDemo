@@ -15,6 +15,11 @@
 		CE2D58C421A3F59600ACEDE9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CE2D58C321A3F59600ACEDE9 /* main.m */; };
 		CE2D58CE21A3F59600ACEDE9 /* VoicePlayDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CE2D58CD21A3F59600ACEDE9 /* VoicePlayDemoTests.m */; };
 		CE2D58D921A3F59600ACEDE9 /* VoicePlayDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = CE2D58D821A3F59600ACEDE9 /* VoicePlayDemoUITests.m */; };
+		CE2D58E721A3F62100ACEDE9 /* 16k.pcm in Resources */ = {isa = PBXBuildFile; fileRef = CE2D58E621A3F62100ACEDE9 /* 16k.pcm */; };
+		CE2D58EA21A404B100ACEDE9 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE2D58E921A404B100ACEDE9 /* AVFoundation.framework */; };
+		CE2D58EC21A404B800ACEDE9 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE2D58EB21A404B800ACEDE9 /* AudioToolbox.framework */; };
+		CE2D58EF21A404F800ACEDE9 /* PCMFilePlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = CE2D58EE21A404F800ACEDE9 /* PCMFilePlayer.m */; };
+		CE2D58F221A4050D00ACEDE9 /* PCMDataPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = CE2D58F121A4050D00ACEDE9 /* PCMDataPlayer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +56,13 @@
 		CE2D58D421A3F59600ACEDE9 /* VoicePlayDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VoicePlayDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE2D58D821A3F59600ACEDE9 /* VoicePlayDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VoicePlayDemoUITests.m; sourceTree = "<group>"; };
 		CE2D58DA21A3F59600ACEDE9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE2D58E621A3F62100ACEDE9 /* 16k.pcm */ = {isa = PBXFileReference; lastKnownFileType = file; path = 16k.pcm; sourceTree = "<group>"; };
+		CE2D58E921A404B100ACEDE9 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		CE2D58EB21A404B800ACEDE9 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		CE2D58ED21A404F800ACEDE9 /* PCMFilePlayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PCMFilePlayer.h; sourceTree = "<group>"; };
+		CE2D58EE21A404F800ACEDE9 /* PCMFilePlayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PCMFilePlayer.m; sourceTree = "<group>"; };
+		CE2D58F021A4050D00ACEDE9 /* PCMDataPlayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PCMDataPlayer.h; sourceTree = "<group>"; };
+		CE2D58F121A4050D00ACEDE9 /* PCMDataPlayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PCMDataPlayer.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +70,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE2D58EC21A404B800ACEDE9 /* AudioToolbox.framework in Frameworks */,
+				CE2D58EA21A404B100ACEDE9 /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +99,7 @@
 				CE2D58CC21A3F59600ACEDE9 /* VoicePlayDemoTests */,
 				CE2D58D721A3F59600ACEDE9 /* VoicePlayDemoUITests */,
 				CE2D58B221A3F59400ACEDE9 /* Products */,
+				CE2D58E821A404B000ACEDE9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,6 +116,7 @@
 		CE2D58B321A3F59400ACEDE9 /* VoicePlayDemo */ = {
 			isa = PBXGroup;
 			children = (
+				CE2D58E621A3F62100ACEDE9 /* 16k.pcm */,
 				CE2D58B421A3F59400ACEDE9 /* AppDelegate.h */,
 				CE2D58B521A3F59400ACEDE9 /* AppDelegate.m */,
 				CE2D58B721A3F59400ACEDE9 /* ViewController.h */,
@@ -110,6 +126,10 @@
 				CE2D58BF21A3F59600ACEDE9 /* LaunchScreen.storyboard */,
 				CE2D58C221A3F59600ACEDE9 /* Info.plist */,
 				CE2D58C321A3F59600ACEDE9 /* main.m */,
+				CE2D58ED21A404F800ACEDE9 /* PCMFilePlayer.h */,
+				CE2D58EE21A404F800ACEDE9 /* PCMFilePlayer.m */,
+				CE2D58F021A4050D00ACEDE9 /* PCMDataPlayer.h */,
+				CE2D58F121A4050D00ACEDE9 /* PCMDataPlayer.m */,
 			);
 			path = VoicePlayDemo;
 			sourceTree = "<group>";
@@ -130,6 +150,15 @@
 				CE2D58DA21A3F59600ACEDE9 /* Info.plist */,
 			);
 			path = VoicePlayDemoUITests;
+			sourceTree = "<group>";
+		};
+		CE2D58E821A404B000ACEDE9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CE2D58EB21A404B800ACEDE9 /* AudioToolbox.framework */,
+				CE2D58E921A404B100ACEDE9 /* AVFoundation.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -238,6 +267,7 @@
 				CE2D58C121A3F59600ACEDE9 /* LaunchScreen.storyboard in Resources */,
 				CE2D58BE21A3F59600ACEDE9 /* Assets.xcassets in Resources */,
 				CE2D58BC21A3F59400ACEDE9 /* Main.storyboard in Resources */,
+				CE2D58E721A3F62100ACEDE9 /* 16k.pcm in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,9 +292,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE2D58F221A4050D00ACEDE9 /* PCMDataPlayer.m in Sources */,
 				CE2D58B921A3F59400ACEDE9 /* ViewController.m in Sources */,
 				CE2D58C421A3F59600ACEDE9 /* main.m in Sources */,
 				CE2D58B621A3F59400ACEDE9 /* AppDelegate.m in Sources */,
+				CE2D58EF21A404F800ACEDE9 /* PCMFilePlayer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -436,7 +468,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7F552VWYBE;
 				INFOPLIST_FILE = VoicePlayDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -452,7 +486,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7F552VWYBE;
 				INFOPLIST_FILE = VoicePlayDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
